@@ -31,7 +31,7 @@ typedef ViewItemEventParameters = Dynamic;
 typedef ViewItemListEventParameters = Dynamic;
 typedef ViewSearchResults = Dynamic;
 
-@:jsRequire('@react-native-firebase/perf', 'firebase.analytics()')
+@:jsRequire('@react-native-firebase/analytics', 'firebase.analytics()')
 extern class Analytics {
 	static function logAddPaymentInfo():Promise<Void>;
 	static function logAddToCart(params:AddToCartEventParameters):Promise<Void>;
