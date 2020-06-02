@@ -20,8 +20,21 @@ typedef LoginEventParameters = {method:String};
 typedef PresentOfferEventParameters = Dynamic;
 typedef PurchaseRefundEventParameters = Dynamic;
 typedef RemoveFromCartEventParameters = Dynamic;
-typedef SearchEventParameters = Dynamic;
-typedef SelectContentEventParameters = Dynamic;
+typedef SearchEventParameters = {
+	search_term:String,
+	?destination:String,
+	?end_date:String,
+	?number_of_nights:Int,
+	?number_of_passengers:Int,
+	?number_of_rooms:Int,
+	?origin:String,
+	?start_date:String,
+	?travel_class:String
+};
+typedef SelectContentEventParameters = {
+	content_type:String,
+	item_id:String
+};
 typedef SetCheckoutOptionEventParameters = Dynamic;
 typedef ShareEventParameters = {content_type:String, item_id:String};
 typedef SignUpEventParameters = {method:String};
