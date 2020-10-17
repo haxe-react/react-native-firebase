@@ -43,6 +43,7 @@ typedef UnlockAchievementEventParameters = Dynamic;
 typedef ViewItemEventParameters = Dynamic;
 typedef ViewItemListEventParameters = Dynamic;
 typedef ViewSearchResults = Dynamic;
+typedef ScreenViewParameters = {screen_class:String, screen_name:String};
 
 @:jsRequire('@react-native-firebase/analytics', 'firebase.analytics()')
 extern class Analytics {
@@ -76,9 +77,9 @@ extern class Analytics {
 	static function logViewItem(params:ViewItemEventParameters):Promise<Void>;
 	static function logViewItemList(params:ViewItemListEventParameters):Promise<Void>;
 	static function logViewSearchResults(params:ViewSearchResults):Promise<Void>;
+	static function logScreenView(params:ScreenViewParameters):Promise<Void>;
 	static function resetAnalyticsData():Promise<Void>;
 	static function setAnalyticsCollectionEnabled(enabled:Bool):Promise<Void>;
-	static function setCurrentScreen(screenName:String, ?screenClassOverride:String):Promise<Void>;
 	static function setMinimumSessionDuration(?milliseconds:Int):Promise<Void>;
 	static function setSessionTimeoutDuration(?milliseconds:Int):Promise<Void>;
 	static function setUserId(?id:String):Promise<Void>;
