@@ -36,7 +36,7 @@ typedef SelectContentEventParameters = {
 	item_id:String
 };
 typedef SetCheckoutOptionEventParameters = Dynamic;
-typedef ShareEventParameters = {content_type:String, item_id:String};
+typedef ShareEventParameters = {content_type:String, item_id:String, method:String};
 typedef SignUpEventParameters = {method:String};
 typedef SpendVirtualCurrencyEventParameters = Dynamic;
 typedef UnlockAchievementEventParameters = Dynamic;
