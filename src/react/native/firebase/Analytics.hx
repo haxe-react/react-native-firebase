@@ -55,7 +55,7 @@ extern class Analytics {
 	static function logCampaignDetails(params:CampaignDetailsEventParameters):Promise<Void>;
 	static function logEarnVirtualCurrency(params:EarnVirtualCurrencyEventParameters):Promise<Void>;
 	static function logEcommercePurchase(?params:EcommercePurchaseEventParameters):Promise<Void>;
-	static function logEvent(name:String, ?params:StringMap<Dynamic>):Promise<Void>;
+	static function logEvent(name:String, ?params:Dynamic):Promise<Void>;
 	static function logGenerateLead(?params:GenerateLeadEventParameters):Promise<Void>;
 	static function logJoinGroup(params:JoinGroupEventParameters):Promise<Void>;
 	static function logLevelEnd(params:LevelEndEventParameters):Promise<Void>;
