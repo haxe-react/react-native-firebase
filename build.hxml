@@ -1,0 +1,5 @@
+--class-path src
+react.native.firebase.Firebase
+--js test.js
+--no-output
+--macro include('react.native.firebase')
