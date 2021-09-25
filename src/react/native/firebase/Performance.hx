@@ -1,15 +1,13 @@
 package react.native.firebase;
 
-@:jsRequire('@react-native-firebase/perf', 'firebase.perf()')
+import react_native_firebase.app.reactnativefirebase.FirebaseApp;
+import react_native_firebase.perf.firebaseperformancetypes.*;
+
+@:jsRequire('@react-native-firebase/perf', 'default')
 extern class Performance {
-	static function startTrace(id:String):Promise<Trace>;
-}
-extern class Trace {
-	function start():Promise<Dynamic>;
-	function stop():Promise<Dynamic>;
-	function putAttribute(attribute:String, value:String):Void;
-	function putMetric(metricName:String, value:Float):Void;
-	function getAttribute(attribute:String):String;
-	function getMetric(metricName:String):Float;
-	function getMetrics():Map<String,Float>;
+	@:selfCall
+	static function inst(?app:FirebaseApp):Performance;
+	
+	function startTrace(id:String):Promise<Trace>;
+	function setPerformanceCollectionEnabled(enabled:Bool): Promise<ts.Undefined>;
 }
