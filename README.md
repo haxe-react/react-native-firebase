@@ -5,4 +5,4 @@ React Native Firebase v6 has new deployment scheme comparing to previous version
 
 Note that each Firebase module needs to be installed manually, please refer to https://rnfirebase.io/ for more info.
 
-Not all API is covered, PR are welcome.
+Current API is covered by dts2hx so errors or inconsistencies possible. PRs are welcome.
