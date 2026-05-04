@@ -15,6 +15,7 @@ extern class Crashlytics {
 	function log(v:String):Void;
 	function crash():Void;
 	function recordError(e:js.lib.Error):Void;
+	function setUserId(userId:String):js.lib.Promise<Dynamic>;
 	function setAttribute(k:String,v:String):Void;
 	function setAttributes(k:Dynamic<String>):Void;
 }
