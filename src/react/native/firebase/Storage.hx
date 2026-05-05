@@ -3,7 +3,7 @@ package react.native.firebase;
 import react_native_firebase.app.reactnativefirebase.FirebaseApp;
 import react_native_firebase.storage.firebasestoragetypes.*;
 
-@:jsRequire('@react-native-firebase/storage', 'default')
+@:jsRequire('@react-native-firebase/storage', 'getStorage')
 extern class Storage {
 	@:selfCall
 	static function inst(?app:FirebaseApp):Storage;

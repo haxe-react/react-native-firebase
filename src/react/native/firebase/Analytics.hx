@@ -9,7 +9,7 @@ import react_native_firebase.analytics.firebaseanalyticstypes.*;
  
 typedef SetCheckoutOptionEventParameters = Dynamic;
 
-@:jsRequire('@react-native-firebase/analytics', 'default')
+@:jsRequire('@react-native-firebase/analytics', 'getAnalytics')
 extern class Analytics {
 	@:selfCall
 	static function inst(?app:FirebaseApp):Analytics;
@@ -34,6 +34,7 @@ extern class Analytics {
 	function logRemoveFromCart(params:RemoveFromCartEventParameters):Promise<Void>;
 	function logSearch(params:SearchEventParameters):Promise<Void>;
 	function logSelectContent(params:SelectContentEventParameters):Promise<Void>;
+	function logSelectItem(params:SelectItemEventParameters):Promise<Void>;
 	function logSetCheckoutOption(params:SetCheckoutOptionEventParameters):Promise<Void>;
 	function logShare(params:ShareEventParameters):Promise<Void>;
 	function logSignUp(params:SignUpEventParameters):Promise<Void>;

@@ -3,7 +3,7 @@ package react.native.firebase;
 import react_native_firebase.app.reactnativefirebase.FirebaseApp;
 import react_native_firebase.perf.firebaseperformancetypes.*;
 
-@:jsRequire('@react-native-firebase/perf', 'default')
+@:jsRequire('@react-native-firebase/perf', 'getPerformance')
 extern class Performance {
 	@:selfCall
 	static function inst(?app:FirebaseApp):Performance;

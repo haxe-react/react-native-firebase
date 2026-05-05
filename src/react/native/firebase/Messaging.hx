@@ -7,7 +7,7 @@ import react_native_firebase.messaging.firebasemessagingtypes.*;
  * API reference: https://rnfirebase.io/reference/messaging
  */
  
-@:jsRequire('@react-native-firebase/messaging', 'default')
+@:jsRequire('@react-native-firebase/messaging', 'getMessaging')
 extern class Messaging {
 	@:selfCall
 	static function inst(?app:FirebaseApp):Messaging;

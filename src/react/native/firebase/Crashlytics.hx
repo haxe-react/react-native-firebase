@@ -7,7 +7,7 @@ import react_native_firebase.app.reactnativefirebase.FirebaseApp;
  * Note: logs are preserved only in scope of crash
  */
 
-@:jsRequire('@react-native-firebase/crashlytics', 'default')
+@:jsRequire('@react-native-firebase/crashlytics', 'getCrashlytics')
 extern class Crashlytics {
 	@:selfCall
 	static function inst(?app:FirebaseApp):Crashlytics;
